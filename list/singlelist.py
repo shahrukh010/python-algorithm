@@ -65,6 +65,7 @@ class List:
 
     def addat(self,index,data=None):
 
+        print(self.head.value);
         if index == 0:
             node = NodeList(data);
             tmp = self.head;
