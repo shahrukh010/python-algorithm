@@ -48,6 +48,22 @@ class BinarySearchTree(object):
     if node.rightchild:
       return self.__getMax__(node.rightchild);
     return node.data;
+
+  def inorder_iterative(self,node):
+    if node is None:
+      return;
+    result = [];
+    stack = [];
+    while len(stack) !=0 or node is not None:
+      if node:
+        stack.append(node);
+        node = node.leftchild;
+      else:
+        tmp = stack.pop();
+        result.append(tmp);
+        node = tmp.rightchild;
+    return result;
+
     
   def inorder(self,node):
     if node :
@@ -67,3 +83,45 @@ tree.inorder(tree.getNode());
 #node = tree.getNode();
 print(tree.getMinValue());
 print(tree.getMaxValue());
+result = tree.inorder_iterative(tree.getNode());
+for data in result:
+  print(data.data,end=',')
+print();
+
+print();
+print('*'*3,'change the data',"*"*3);
+
+
+class Tree:
+  def __init__(self,data):
+    self.data = data;
+    self.leftchild = None;
+    self.rightchild = None;
+
+  def preorder(self,node):
+    if node is None:
+      return;
+    result = [];
+    stack = [];
+    while node is not None or len(stack) !=0:
+      if node:
+        result.append(node.data)
+        stack.append(node)
+        node = node.leftchild;
+      else:
+        tmp = stack.pop();
+        node = tmp.rightchild;
+    return result;
+    
+t = Tree("A")
+t.leftchild = Tree("B");
+t.leftchild.leftchild = Tree("D");
+t.leftchild.rightchild = Tree("E");
+t.rightchild = Tree("C");
+t.rightchild.rightchild = Tree("G");
+t.rightchild.leftchild = Tree("F");
+
+result = t.preorder(t);
+for data in result:
+  print(data);
+
