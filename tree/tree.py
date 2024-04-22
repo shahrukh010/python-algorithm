@@ -112,7 +112,7 @@ class Tree:
         tmp = stack.pop();
         node = tmp.rightchild;
     return result;
-    
+
 t = Tree("A")
 t.leftchild = Tree("B");
 t.leftchild.leftchild = Tree("D");
