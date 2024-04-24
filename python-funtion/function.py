@@ -93,3 +93,41 @@ print(chr(65))
 l = [5,4,3,2,1];
 print(l);
 print(sorted(l));
+
+#filter
+L = [1,2,3,4,5,6,7,8,9,10];
+def even(value):
+  if value%2==0:
+    return True;
+  else:
+    return False;
+
+result = filter(even,L);
+for r in result:
+  print(r);
+
+def odd(x):
+  if x%2 !=0:
+    return True;
+  else:
+    return False;
+
+oddresult = filter(odd,L);
+for odd in oddresult:
+  print(odd);
+
+
+#check attribute.
+s = "annie";
+print(hasattr(s,'lower'));
+print(hasattr(s,'upper'))
+print(hasattr(s,'len'))
+
+#instance 
+s = "abc"
+n = 10;
+f = 10.5;
+#use isinstance() this function before use any object check instance of it or not.
+print(isinstance(s,str));
+print(isinstance(n,int))
+print(isinstance(f,float))
