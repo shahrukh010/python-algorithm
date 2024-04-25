@@ -131,3 +131,63 @@ f = 10.5;
 print(isinstance(s,str));
 print(isinstance(n,int))
 print(isinstance(f,float))
+
+
+#function as object.
+def display(name=None):
+  print("hello",name)
+
+#assign function as object to d
+d = display
+d('hector');
+
+#define inner function
+def Outer():
+  def inner():
+    print("inner function");
+  inner();
+
+Outer();
+
+
+#function as parameter.
+def add(x,y):
+  print(x+y)
+def sub(x,y):
+  print(x-y)
+def fun(f,x,y):
+  f(x,y);
+
+#passing function as parameter.
+fun(add,10,20);
+fun(sub,20,15)
+
+#return as function
+def Outer():
+  def display():
+    print("hello fun")
+  return display;#returning display function as object.
+
+d = Outer();
+d();
+
+
+#use of lambda
+sum = lambda x,y:x+y;
+
+total = sum(10,20);
+print(total);
+square = lambda a:a**a;
+print(square(2));
+
+def miles2km(miles):
+  kms = 1.6*miles;
+  return kms;
+
+print(miles2km(10))
+
+kms = lambda miles:1.6*miles;
+print(kms);
+
+
+
