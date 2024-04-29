@@ -1,17 +1,23 @@
-Here are some popular open-source APIs available for Python:
+Here are some popular open-source APIs for Python that you can use in your projects:
 
-1. Requests: A simple and elegant HTTP library for Python, providing features like SSL verification, proxy support, and more. It is widely used for making HTTP requests in Python.
+1. Requests: A Python library for making HTTP requests easily. It simplifies the process of sending HTTP requests and processing responses.
 
-2. Flask: A lightweight and modular web framework for Python. Flask allows developers to easily create web applications and REST APIs using Python.
+Github link: https://github.com/psf/requests
 
-3. Django Rest Framework: A powerful and flexible toolkit for building Web APIs in Django. It provides serializers, authentication, permissions, and other essential tools for building RESTful APIs.
+2. Flask: A popular web framework for building RESTful APIs and web applications in Python. It is lightweight and easy to use, making it a great choice for small to medium-sized projects.
 
-4. Tweepy: A Python library for accessing the Twitter API. Tweepy allows developers to interact with Twitter data, such as fetching tweets, posting tweets, and searching for tweets.
+Github link: https://github.com/pallets/flask
 
-5. Pandas: A popular open-source data manipulation library for Python. Pandas provides data structures like DataFrames and tools for working with structured data, making it widely used for data analysis and manipulation.
+3. Django REST framework: A powerful and flexible toolkit for building Web APIs in Python. It provides a set of tools to simplify the process of building APIs, including serialization, authentication, and permissions.
 
-6. TensorFlow: An open-source deep learning framework developed by Google. TensorFlow enables developers to build and deploy machine learning models, including neural networks, for various applications.
+Github link: https://github.com/encode/django-rest-framework
 
-7. Scikit-learn: A machine learning library for Python that provides tools for data preprocessing, modeling, evaluation, and more. Scikit-learn is widely used for building and training machine learning models.
+4. OpenAPI Generator: A code generator that takes an OpenAPI Specification (formerly Swagger) and generates client libraries, server stubs, API documentation, and more.
 
-These are just a few examples of open-source APIs available for Python. You can explore more options on platforms like GitHub and PyPI.
+Github link: https://github.com/OpenAPITools/openapi-generator
+
+5. TensorFlow: An open-source machine learning library for Python developed by Google. It provides tools and libraries for building and training machine learning models.
+
+Github link: https://github.com/tensorflow/tensorflow
+
+These are just a few examples of the many open-source APIs available for Python. You can explore more options on platforms like GitHub and PyPI.

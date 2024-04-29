@@ -22,7 +22,6 @@ file.write("This is my first file\n");
 import requests
 
 api_url = "https://api.openai.com/v1/chat/completions";
-access_token = "Bearer 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"
 
 headers = {
     "Authorization": access_token,
