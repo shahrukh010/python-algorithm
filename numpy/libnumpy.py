@@ -37,25 +37,52 @@ a = numpy.array([[1, 2, 3], [4, 5, 6]])
 for x in numpy.nditer(a):
   print(x)
 
-data = numpy.array([['apple', 'banana'],['cat', 'dog'],[20,30]])
+data = numpy.array([['apple', 'banana'], ['cat', 'dog'], [20, 30]])
 
 #iterate nd-array using nditer.
 for d in numpy.nditer(data):
   print(d)
 
 #iterate only specific exits
-data = numpy.array([[1,2,3],[4,5,7],[8,9,10]])
-for d in numpy.nditer(data,flags=['buffered'],op_dtypes=['str']):
+data = numpy.array([[1, 2, 3], [4, 5, 7], [8, 9, 10]])
+for d in numpy.nditer(data, flags=['buffered'], op_dtypes=['str']):
   #print(type(d));#numpy.array
   #print(type(d.dtype));#Float
-  print(type(d.dtype));
+  print(type(d.dtype))
 
 #print the first and second columns from all rows
-for nums in numpy.nditer(data[:,:2]):
-  print(nums);
-
+for nums in numpy.nditer(data[:, :2]):
+  print(nums)
 
 # By using the nditer() function, we can retrieve only the data without the indexes. To access the indexes, we can utilize the ndenumerate() function.
 
-for index,nums in numpy.ndenumerate(data):
+for index, nums in numpy.ndenumerate(data):
   print(f"[{index}]={nums}")
+
+#Get the shape of array;
+print(data.shape)
+
+#perform arithmatic operation on array.
+
+a = numpy.array([1, 2, 3])
+b = numpy.array([4, 5, 6])
+c = a + b
+# it will perform arithmetic operation because of daimension and shape both are same.
+print(c)
+
+b = numpy.array([4, 5, 6, 7])
+#print(b.shape);
+#c = a+b; #not perform because of shape are not same.3X4
+
+a = numpy.array([10, 20, 30])
+b = numpy.array([40])
+c = a + b
+#in this case we are getting result because of numpy using broadcasting b array becomes like [40,40,40]
+print(c)
+
+#perform arithmatic operation on ndarray.
+a = numpy.array([[10, 20], [30, 40], [50, 60]])
+b = numpy.array([10,20]);
+c = a+b;
+print("a+b")
+print(c);
