@@ -99,12 +99,12 @@ class BinarySearchTree(object):
         return tmpnode
     print("removing node with two children")
     tmpnode = self.getPreceding(node.leftchild)
-    node.data = tmpnode.data
+#    node.data= tmpnode.data;
     node.leftchild = self.removeNode(node.leftchild, data)
 
   def getPreceding(self, node):
-    if node is None:
-      return None
+    if not node:
+      return node;
     if node.rightchild:
       return self.getPreceding(node.rightchild)
     return node
@@ -135,9 +135,9 @@ print(result)
 print(tree.getMinValue())
 print(tree.getMaxValue())
 result = tree.inorder_iterative(tree.getNode())
-for data in result:
-  print(data.data, end=',')
-print()
+# for data in result:
+#   print(data.data, end=',')
+# print()
 
 print()
 print('*' * 3, 'change the data', "*" * 3)
