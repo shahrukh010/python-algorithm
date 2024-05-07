@@ -86,3 +86,32 @@ b = numpy.array([10,20]);
 c = a+b;
 print("a+b")
 print(c);
+
+
+                                  #Accessing 1-d array multiple way
+
+#To access random data from ndarray using random index
+input = numpy.array([10,20,30,40,50,60,70,80,90,100])
+
+indexes = numpy.array([0,2,4,6,8]);
+result = input[indexes];
+print(result);
+#we can pass list to the array.
+l = [1,3,5,7,9];#list
+print(input[l]);
+
+result = input[[0,1,2,0,0,7,7]]#we can see here same element can access multiple times
+print(result);
+
+
+#Accessing Elements From 2nd array.
+input = numpy.array([[1,2,3,4],
+                    [5,6,7,8],
+                    [9,10,11,12],
+                    [13,14,15,16]]);
+result = input[[0,1,2,3],[0,1,2,3]]#accessing 2nd array element.
+print(result);#1,6,11,16
+print(type(result))
+
+result = input[[1,3],[0,2]]#specific result.
+print(result);
