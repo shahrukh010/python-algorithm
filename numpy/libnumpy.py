@@ -115,3 +115,19 @@ print(type(result))
 
 result = input[[1,3],[0,2]]#specific result.
 print(result);
+
+
+#Access Eelement From 3-d Array
+
+input = numpy.array([[
+[1,2,3,4],
+[5,6,7,8],
+[9,10,11,12]],
+[[13,14,15,16],
+[17,18,19,20],
+[21,22,23,24]]
+])
+print(input.shape);
+
+result = input[[0,1],[0,1],[0,1]];
+print(result);
