@@ -6,8 +6,7 @@ client = ApifyClient("apify_api_NDWvCJdhquBl3iMxqoMXasbsUrAJ3n0WOgVC")
 
 # Prepare the Actor input
 run_input = {
-    #"username": ["https://www.instagram.com/p/C6l2fyjyEg-/"],
-    "username": ["https://www.instagram.com/reel/C6nVQKcqDON/l̥"],
+    "username": ["https://www.instagram.com/p/C6l2fyjyEg-/"],
     "resultsLimit": 30,
 }
 
