@@ -193,3 +193,18 @@ print(a*b);
 print(a/b);
 print(a%b);
 print(a**b);
+
+nums = numpy.array([[1,2,3,4],[5,6,7,8]])
+#adding multiple daimensional array.
+print(nums+nums);
+
+
+#perform arithmatic operation using function.
+print("**********")
+a = numpy.array([10,20,30,40]);
+b = numpy.array([1,2,3,4]);
+print(numpy.add(a,b));
+print(numpy.subtract(a,b));
+print(numpy.multiply(a,b));
+print(numpy.power(a,b));
+print(numpy.mod(a,b));
