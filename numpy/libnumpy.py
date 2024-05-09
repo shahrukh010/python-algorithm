@@ -131,3 +131,65 @@ print(input.shape);
 
 result = input[[0,1],[0,1],[0,1]];
 print(result);
+
+
+#Accessing array element based on some condition
+input = numpy.array([10,-5,20,30,-40,50,60,-70,80,90,-100]);
+#it will give all boolean result[true,false,....]
+boolean_array = input < 0;
+print(boolean_array);
+
+#select all the element which are less than 0.
+result = input[input < 0]
+print(result);
+#select all the element which are greater than 30
+result = input[input > 30]
+print(result);
+
+#print(input);
+a = input[0:6]#numpy slice it will create view of object
+print(a);
+a[0] = 100;#if you change the value of a it will change the value of input array.(because of it logical view of physical)
+print(input);
+print(a);
+
+
+#advance indexing to create view of array.
+input = numpy.array([10,20,30,40,50,60]);
+nums = input[[0,2,4]];
+print(nums);
+nums[0] = 100;
+print(input);
+print(nums);
+print(input);#it will not change the value of input array. because of instead of sclice we are using indexes to create nums array.
+
+
+
+#perform arithmatic operation.
+print(10+5);
+print(10-5);
+print(10/50.0);
+print(10/10);
+print(10//10);
+print(10%10);
+print(10*2);#multiplecation.
+print(10**2);#square
+
+#arithmatic operation on ndarray.
+print(input);
+print(input+2)
+print(input-2)
+print(input%2);
+print(input*2)
+print(input**2);
+#print(input / 0)
+
+#arithmatic operation array with array
+a = numpy.array([100,200,300,400])
+b = numpy.array([10,20,30,4]);
+print(a+b);
+print(a-b);
+print(a*b);
+print(a/b);
+print(a%b);
+print(a**b);
