@@ -208,3 +208,66 @@ print(numpy.subtract(a,b));
 print(numpy.multiply(a,b));
 print(numpy.power(a,b));
 print(numpy.mod(a,b));
+
+input = numpy.array([[1,2,3,10],[4,5,6,20],[7,8,9,30]])
+#Get the daimension of array.
+print(numpy.ndim(input));
+
+print(numpy.size(input));
+#Get the no of row and column
+print(numpy.shape(input));
+
+#Get the float type result from nd array
+print(input.astype('float'))
+#Get the string type result from nd array
+print(input.astype('str'))
+
+print("********************")
+print("********************")
+print("********************")
+
+#concatenate array
+a = [1,2,3,4]
+b = [5,6,7,8];
+result = numpy.concatenate((a,b));
+print(result);
+result_axis_zero = numpy.concatenate((a,b),axis=0);
+print(result_axis_zero);
+a = [[1,2],[3,4]]
+b = [[5,6],[7,8]]
+result_axis_one = numpy.concatenate((a,b),axis=1)
+print(result_axis_one)
+
+#change axis using function.
+axis_zero = numpy.vstack([a,b]);#vertical concatenation
+print(axis_zero)
+axis_one = numpy.hstack([a,b]);#horizantal concatenation.
+print(axis_one);
+
+nums = numpy.array([[1,2,3,4,5],[6,7,8,9,10]]);
+splited_result = numpy.split(nums,2);#splite the array into 2 parts
+print(splited_result[0]);#access first part
+print(splited_result[1]);#access second part
+
+
+#adding and removing element in array
+
+input = numpy.array([1,2,3,4,5]);
+print(numpy.append(input,6));
+input = numpy.array([[1,2,3],[4,5,6]])
+print(numpy.insert(input,0,0));
+
+print(numpy.insert(input,1,[10,20,30]))#insert in specific index.
+print(numpy.insert(input,1,[10,20,30],axis=0))#insert in specific index and convert into two dimensional array.
+result = numpy.insert(input,1,[100,200,300],axis=0);
+print(result);
+print(numpy.ndim(result));#2d array
+print(numpy.shape(result));#3 X 3
+
+#delet element from array.
+#print(numpy.delete(result,0));
+#result = numpy.delete(result,0,axis=1)#it will delete first row element which (0,0)
+print(result);
+result = numpy.delete(result,0,axis=0);#it will delete first first row and column entire
+print("***************************************")
+print(result);
