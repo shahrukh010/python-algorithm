@@ -190,4 +190,26 @@ kms = lambda miles:1.6*miles;
 print(kms);
 
 
+#working with random function
+print("******************************")
+print("******************************")
+print("******************************")
+import random;
+print(random.random());
+print(random.random());
+result = random.uniform(1,10);
+print(result);
+import math
+print(math.floor(result))
+print(random.randint(1,10))#only integer number
+
+print(random.randrange(1,10,3));
+
+l = [ 'annie','hector','bridget']
+print(random.choice(l));
+print(random.choices(l,k=3))#three random data will be printed from list
+
+l = [1,2,3,4,5]
+random.shuffle(l);
+print(l);
 
