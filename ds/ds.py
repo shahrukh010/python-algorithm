@@ -21,3 +21,18 @@ c.pop('nic');
 print(c);
 #print(c.popitem());
 print(c.most_common());
+
+#deque operation
+from collections import deque
+L = [1,2,3,5];
+d = deque(L)
+d.append(6)
+d.appendleft(0)
+print(d)
+print(L);
+d.pop();
+print(d);
+d.popleft();
+print(d);
+d.extend([10,20,30])
+print(d);
