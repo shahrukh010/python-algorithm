@@ -36,3 +36,42 @@ d.popleft();
 print(d);
 d.extend([10,20,30])
 print(d);
+
+
+#working with array
+import array;
+
+input = array.array('i',[10,20,30,40,50])
+#'i'->Integer
+print(input);
+arr = b"ABCDEF"
+#b -> byte
+input = array.array('b',arr);
+print(input);
+print(input[0],input[2])
+print(dir(arr));
+input.append(100)
+print(input);
+
+
+#working on heapq
+
+import heapq;
+H = [];
+
+heapq.heappush(H,10);
+heapq.heappush(H,30);
+heapq.heappush(H,50);
+heapq.heappush(H,20)
+print(H);
+heapq.heappop(H);
+print(H)
+
+#make L to heap
+L = [40,20,10,30,50];
+
+heapq.heapify(L)
+print(L);
+
+print(heapq.nlargest(3,L));
+print(heapq.nsmallest(2,L))
