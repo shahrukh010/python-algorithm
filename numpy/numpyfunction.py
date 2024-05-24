@@ -31,3 +31,7 @@ result = numpy.where(random_data < 0)
 print(result);
 result = numpy.where(random_data > 10)
 print(result);
+result_even = numpy.where(random_data%2==0)
+print(result_even);
+result_odd = numpy.where(random_data %2!=0)
+print(result_odd);
