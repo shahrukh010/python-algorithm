@@ -75,3 +75,7 @@ print(L);
 
 print(heapq.nlargest(3,L));
 print(heapq.nsmallest(2,L))
+
+
+def sayHello():
+  return "hello";

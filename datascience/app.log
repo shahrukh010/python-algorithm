@@ -1,0 +1,13 @@
+2024-06-10 06:35:02,175 root INFO filtering out the integers from the list
+2024-06-10 06:35:02,175 root INFO checking the type of 1
+2024-06-10 06:35:02,175 root INFO checking the type of 2
+2024-06-10 06:35:02,175 root INFO checking the type of 3
+2024-06-10 06:35:02,175 root INFO checking the type of [4, 5, 6]
+2024-06-10 06:35:02,175 root INFO the type of [4, 5, 6] is list
+2024-06-10 06:35:02,175 root INFO checking the type of 4
+2024-06-10 06:35:02,175 root INFO checking the type of 5
+2024-06-10 06:35:02,175 root INFO checking the type of 6
+2024-06-10 06:35:02,176 root INFO checking the type of annie
+2024-06-10 06:35:02,176 root INFO checking the type of hector
+2024-06-10 06:35:02,176 root INFO checking the type of bridget
+2024-06-10 06:35:02,176 root INFO checking the type of nic
