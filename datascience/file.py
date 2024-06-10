@@ -43,6 +43,45 @@ print(result);
 result = data1['subject'][2];
 print(result);
 
+#working with csv data
+import csv
 
+data = [['name','email_id','phone_number'],
+        ['Hector','hector@gmail.com','9505663563'],
+        ['James','james@gmail.com','9505663563'],
+        ['Jack','jack@gmail.com','9505663564'],
+        ['Jill','jill@gmail.com','9097620737']]
+
+#write a csv file
+with open('data.csv','w') as file:
+  writer = csv.writer(file)
+  for row in data:
+    writer.writerow(row)
+
+
+# #read a csv file
+# with open('data.csv','r') as file:
+#   read_data = csv.reader(file)
+#   for read in read_data:
+#     print(read);
+
+# #read ticket csv 
+# with open('ticket.csv','r') as ticket:
+#   ticket = csv.reader(ticket);
+#   for data in ticket:
+#     print(data)
   
 
+import io;
+
+#write a binary file data
+# with open('new_file.txt','wb') as bf:
+#   buffer_writer = io.BufferedWriter(bf);
+#   buffer_writer.write(b"Hello world");
+#   buffer_writer.close()
+
+with open('new_file.txt','rb') as br:
+  reader_file = io.BufferedReader(br);
+  print(reader_file.read());
+
+  

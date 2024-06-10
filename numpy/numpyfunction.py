@@ -66,3 +66,13 @@ print(input[filter_result]);
 filter_result = input<90;
 result = input[filter_result];
 print(result);
+
+input = numpy.array([1,2,3,4,5,6,7,8,9,10])
+filter = input %2==0;
+#all even number
+print(input[filter]);
+
+arange_data = numpy.arange(0,11);
+print(arange_data);
+arange_data = numpy.arange(1,10,2)
+print(arange_data);
